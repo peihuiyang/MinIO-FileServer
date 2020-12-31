@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FileServer.Api</name>
+    </assembly>
+    <members>
+        <member name="T:FileServer.Api.Configuration.AutoMappers.MapperProfiles">
+            <summary>
+            实体自动映射配置
+            </summary>
+        </member>
+        <member name="M:FileServer.Api.Configuration.Common.ExportFile.CreateFile(System.Byte[])">
+            <summary>
+            生成文件
+            </summary>
+            <param name="buffer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Configuration.Common.ExportFile.CreateFileName(System.String)">
+            <summary>
+            生成文件名
+            </summary>
+            <param name="extend">后缀</param>
+            <returns></returns>
+        </member>
+        <member name="T:FileServer.Api.Configuration.Consul.ConsulHelper">
+            <summary>
+            Consul帮助类
+            </summary>
+        </member>
+        <member name="M:FileServer.Api.Configuration.Consul.ConsulHelper.ConsulRegister(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Consul注册
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="T:FileServer.Api.Configuration.JsonOptions.LowerContractResolver">
+            <summary>
+            转换为小写
+            </summary>
+        </member>
+        <member name="M:FileServer.Api.Configuration.JsonOptions.LowerContractResolver.ResolvePropertyName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FileServer.Api.Configuration.Log.Log4NetExtend">
+            <summary>
+            日志拓展类
+            </summary>
+        </member>
+        <member name="T:FileServer.Api.Configuration.Swagger.SwaggerDocTag">
+            <summary>
+            接口文档注释
+            </summary>
+        </member>
+        <member name="M:FileServer.Api.Configuration.Swagger.SwaggerDocTag.Apply(Microsoft.OpenApi.Models.OpenApiDocument,Swashbuckle.AspNetCore.SwaggerGen.DocumentFilterContext)">
+            <summary>
+            添加控制器注释
+            </summary>
+            <param name="swaggerDoc"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:FileServer.Api.Controllers.HealthController">
+            <summary>
+            健康监控
+            </summary>
+        </member>
+        <member name="M:FileServer.Api.Controllers.HealthController.Check">
+            <summary>
+            健康检查
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.HealthController.Test">
+            <summary>
+            测试
+            </summary>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.FileExtendController.DeleteWatermark(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            测试--去文字水印(PDF)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.FileExtendController.RemoveWatermark(System.IO.Stream,System.String)">
+            <summary>
+            去文字水印(PDF)
+            </summary>
+            <param name="stream"></param>
+            <param name="watermark">文字水印</param>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.FileExtendController.ModifyILFileName(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            修改征询函文件名称
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.MinioBucketController.CreateOne(System.String)">
+            <summary>
+            新增一个存储桶
+            </summary>
+            <param name="BucketName">存储桶名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.MinioBucketController.IsExistBucket(System.String)">
+            <summary>
+            验证指定桶是否存在
+            </summary>
+            <param name="BucketName">存储桶名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.MinioBucketController.Delete(System.String)">
+            <summary>
+            删除指定桶
+            </summary>
+            <param name="BucketName">存储桶名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.MinioBucketController.BatchDelete(System.Collections.Generic.List{System.String})">
+            <summary>
+            批量删除指定桶
+            </summary>
+            <param name="BucketNameList">存储桶名称列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.MinioBucketController.Search">
+            <summary>
+            获取存储桶列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.MinioObjectController.SaveFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            测试--文件上传
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.MinioObjectController.FindByBucket(System.String)">
+            <summary>
+            根据桶名获取所有文件
+            </summary>
+            <param name="BucketName">桶名</param>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.MinioObjectController.FindDetail(FileServer.EntityDto.Minio.FindFileDto)">
+            <summary>
+            查看单个文件详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.MinioObjectController.UploadFile(FileServer.EntityDto.Minio.UploadFileDto)">
+            <summary>
+            文件上传(压缩)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.MinioObjectController.UploadCFile(FileServer.EntityDto.Minio.UploadFileDto)">
+            <summary>
+            文件上传(无压缩)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.MinioObjectController.ReplaceFile(FileServer.EntityDto.Minio.ReplaceFileDto)">
+            <summary>
+            替换文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.MinioObjectController.FindFile(FileServer.EntityDto.Minio.FindFileDto)">
+            <summary>
+            查看文件（含数据）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.MinioObjectController.DownloadFile(FileServer.EntityDto.Minio.FindFileDto)">
+            <summary>
+            下载文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.MinioObjectController.Delete(FileServer.EntityDto.Minio.FindFileDto)">
+            <summary>
+            删除文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Controllers.v1.MinioObjectController.BatchDelete(System.Collections.Generic.List{FileServer.EntityDto.Minio.FindFileDto})">
+            <summary>
+            批量删除文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FileServer.Api.Filters.HttpGlobalExceptionFilter">
+            <summary>
+            全局异常过滤器
+            </summary>
+        </member>
+        <member name="F:FileServer.Api.Filters.HttpGlobalExceptionFilter._log">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="F:FileServer.Api.Filters.HttpGlobalExceptionFilter._env">
+            <summary>
+            host主机
+            </summary>
+        </member>
+        <member name="M:FileServer.Api.Filters.HttpGlobalExceptionFilter.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="env"></param>
+        </member>
+        <member name="M:FileServer.Api.Filters.HttpGlobalExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            exception
+            </summary>
+            <param name="context">异常上下文</param>
+        </member>
+        <member name="T:FileServer.Api.Filters.HttpGlobalExceptionFilter.ApplicationErrorResult">
+            <summary>
+            错误结果类
+            </summary>
+        </member>
+        <member name="M:FileServer.Api.Filters.HttpGlobalExceptionFilter.ApplicationErrorResult.#ctor(System.Object)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="T:FileServer.Api.Filters.HttpGlobalExceptionFilter.ErrorResponse">
+            <summary>
+            错误Response
+            </summary>
+        </member>
+        <member name="M:FileServer.Api.Filters.HttpGlobalExceptionFilter.ErrorResponse.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="P:FileServer.Api.Filters.HttpGlobalExceptionFilter.ErrorResponse.Message">
+            <summary>
+            消息内容
+            </summary>
+        </member>
+        <member name="F:FileServer.Api.Middleware.GlobalExceptionHandlerMiddleware._next">
+            <summary>
+            请求代理
+            </summary>
+        </member>
+        <member name="M:FileServer.Api.Middleware.GlobalExceptionHandlerMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:FileServer.Api.Middleware.GlobalExceptionHandlerMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.Middleware.GlobalExceptionHandlerMiddleware.Object2XmlString(System.Object)">
+            <summary>
+            对象转换为xml
+            </summary>
+            <param name="o"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.RequestBody.HttpRequestExtension.GetRawBodyStringAsyn(Microsoft.AspNetCore.Http.HttpRequest,System.Text.Encoding)">
+            <summary>
+            
+            </summary>
+            <param name="httpRequest"></param>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.RequestBody.HttpRequestExtension.GetRawBodyBinaryAsyn(Microsoft.AspNetCore.Http.HttpRequest,System.Text.Encoding)">
+            <summary>
+            二进制
+            </summary>
+            <param name="httpRequest"></param>
+            <param name="encoding"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FileServer.Api.RequestBody.RawRequestBodyFormatter">
+            <summary>
+            格式化程序
+            </summary>
+        </member>
+        <member name="M:FileServer.Api.RequestBody.RawRequestBodyFormatter.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:FileServer.Api.RequestBody.RawRequestBodyFormatter.CanRead(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FileServer.Api.RequestBody.RawRequestBodyFormatter.ReadAsync(Microsoft.AspNetCore.Mvc.Formatters.InputFormatterContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="F:FileServer.Api.Startup._Assemblies">
+            <summary>
+            程序集列表
+            </summary>
+        </member>
+        <member name="M:FileServer.Api.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            依赖注入
+            </summary>
+            <param name="container"></param>
+        </member>
+    </members>
+</doc>

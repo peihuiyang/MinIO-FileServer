@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FileServer.EntityDto</name>
+    </assembly>
+    <members>
+        <member name="T:FileServer.EntityDto.Minio.BucketDto">
+            <summary>
+            功能描述    ：存储桶传输实体
+            创 建 者    ：Yang Peihui
+            创建日期    ：2020-12-14 14:30:26 
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.BucketDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.BucketDto.CreationDate">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.BucketDto.CreationDateDateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:FileServer.EntityDto.Minio.FileDto">
+            <summary>
+            功能描述    ：文件信息（带数据）
+            创 建 者    ：Yang Peihui
+            创建日期    ：2020-12-11 17:30:26 
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.FileDto.Bucket">
+            <summary>
+            Bucket名
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.FileDto.FileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.FileDto.FileUrl">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.FileDto.Base64String">
+            <summary>
+            Base64
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.FileDto.TheStream">
+            <summary>
+            文件流
+            </summary>
+        </member>
+        <member name="T:FileServer.EntityDto.Minio.FindFileDto">
+            <summary>
+            功能描述    ：查询文件实体
+            创 建 者    ：Yang Peihui
+            创建日期    ：2020-12-15 11:24:10 
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.FindFileDto.BucketName">
+            <summary>
+            包名
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.FindFileDto.FileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.FindFileDto.Prefix">
+            <summary>
+            前缀
+            </summary>
+        </member>
+        <member name="T:FileServer.EntityDto.Minio.ItemDto">
+            <summary>
+            功能描述    ：文件详情实体
+            创 建 者    ：Yang Peihui
+            创建日期    ：2020-12-15 09:16:23 
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.ItemDto.Name">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.ItemDto.BucketName">
+            <summary>
+            存储桶名
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.ItemDto.Size">
+            <summary>
+            大小
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.ItemDto.IsDir">
+            <summary>
+            是否文件夹
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.ItemDto.LastModifiedDateTime">
+            <summary>
+            最后修改时间
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.ItemDto.ContentType">
+            <summary>
+            文件内容类型
+            </summary>
+        </member>
+        <member name="T:FileServer.EntityDto.Minio.ReplaceFileDto">
+            <summary>
+            功能描述    ：替换文件实体
+            创 建 者    ：Yang Peihui
+            创建日期    ：2020-12-16 10:07:47 
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.ReplaceFileDto.OldBucket">
+            <summary>
+            Bucket名
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.ReplaceFileDto.OldFileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.ReplaceFileDto.NewBucket">
+            <summary>
+            Bucket名
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.ReplaceFileDto.NewFileName">
+            <summary>
+            文件名（可不传）
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.ReplaceFileDto.TheStream">
+            <summary>
+            文件流
+            </summary>
+        </member>
+        <member name="T:FileServer.EntityDto.Minio.UploadFileDto">
+            <summary>
+            功能描述    ：上传文件传输实体
+            创 建 者    ：Yang Peihui
+            创建日期    ：2020-12-15 10:41:05 
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.UploadFileDto.BucketName">
+            <summary>
+            包名
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.UploadFileDto.FileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:FileServer.EntityDto.Minio.UploadFileDto.TheStream">
+            <summary>
+            文件流
+            </summary>
+        </member>
+    </members>
+</doc>

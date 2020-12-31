@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>D:\Workfile\OrgProject\com.sanhepile.project\FileServer.Api\FileServer.Api\FileServer.Api.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="Consul" Version="1.6.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.10" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FileServer.ApplicationServer\FileServer.ApplicationServer.csproj" />
+    <ProjectReference Include="..\FileServer.Common\FileServer.Common.csproj" />
+    <ProjectReference Include="..\FileServer.DomainServer\FileServer.DomainServer.csproj" />
+    <ProjectReference Include="..\FileServer.IApplicationServer\FileServer.IApplicationServer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Peihui.Common.Security">
+      <HintPath>..\..\..\OrgProject\my_linbrary\Peihui.Common.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Peihui.Core">
+      <HintPath>..\..\..\OrgProject\my_linbrary\Peihui.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="FileServer.Api.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+
+</Project>

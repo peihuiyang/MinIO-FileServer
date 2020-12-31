@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FileServer.Common\FileServer.Common.csproj" />
+    <ProjectReference Include="..\FileServer.EntityDto\FileServer.EntityDto.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Peihui.Core">
+      <HintPath>..\..\..\OrgProject\my_linbrary\Peihui.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
