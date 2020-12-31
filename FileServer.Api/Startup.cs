@@ -172,7 +172,7 @@ namespace FileServer.Api
             //启用中间件服务对swagger-ui，指定Swagger JSON终结点
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "三和管桩文件服务管理后台API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "文件服务管理后台API V1");
                 c.RoutePrefix = string.Empty;
             });
             #endregion           
